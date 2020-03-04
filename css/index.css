@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Hind+Madurai|Lobster|Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Hind+Madurai|Lobster|Pathway+Gothic+One|Ropa+Sans&display=swap');
 
 :root {
     font-family: 'Hind Madurai', sans-serif;
@@ -46,8 +46,8 @@ body header div.font-label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Cinzel', serif;
-    font-size: 3rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--second-color);
     margin: 100px 0 0 0;
