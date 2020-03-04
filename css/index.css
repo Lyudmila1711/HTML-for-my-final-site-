@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Hind+Madurai|Lobster|Ropa+Sans&display=swap');
+
+:root {
+    font-family: 'Hind Madurai', sans-serif;
+    --main-color: #12094A;
+    --second-color: white;
+}
+
+body{
+    max-width: 980px;
+    margin: auto;
+}
+
+body header {
+    font-family: 'Lobster', cursive;
+    color: var(--main-color);
+    background-image: url(../img/fone.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+body header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+body header nav div {
+    font-family: 'Ropa Sans', sans-serif;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+body header nav div label {
+    font-size: 12px;
+    color: white;
+    margin: 10px 20px;
+    
+}
+
+body header div.font-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin: 100px 0 0 0;
+}
+
+body header div p {
+    margin: 0;
+}
+
+.action-button {
+    font-family: 'Ropa Sans', sans-serif;
+    display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: var(--main-color);
+    font-size: 12px;	
+    text-transform: uppercase;
+    background-color: #F2CF66;
+    margin: 40px;
+}
