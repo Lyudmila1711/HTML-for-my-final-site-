@@ -72,3 +72,18 @@ body header div p {
     background-color: #F2CF66;
     margin: 40px;
 }
+
+body aside {
+    background-color: #ccffff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+body main {
+    background-image: url(../img/bouquet-of-roses.jpg);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #dbe0e6;
+    padding-top: 150px;
+}
