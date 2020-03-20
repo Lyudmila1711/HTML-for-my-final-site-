@@ -23,6 +23,7 @@ body header {
 body header nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 body header nav h1 {
@@ -53,7 +54,7 @@ body header div.font-label {
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--second-color);
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
     letter-spacing: 15px;
 }
 
@@ -80,10 +81,17 @@ body aside {
 }
 
 body main {
-    background-image: url(../img/bouquet-of-roses.jpg);
+    background-image: url(../img/fon-bouquiet.png);
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: top;
-    background-color: #dbe0e6;
+    background-color: #f1e6e4;;
     padding-top: 150px;
+}
+
+body main.container {
+    display: grid;
+    grid-template-rows: 2fr 2fr 3fr;
+    text-align: center;
+    color: black;
 }
