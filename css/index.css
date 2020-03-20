@@ -62,18 +62,6 @@ body header div p {
     margin: 0;
 }
 
-.action-button {
-    font-family: 'Ropa Sans', sans-serif;
-    display: inline-block;
-	padding: 10px 20px;
-	border-radius: 10px;
-	color: var(--main-color);
-    font-size: 12px;	
-    text-transform: uppercase;
-    background-color: #F2CF66;
-    margin: 40px;
-}
-
 body aside {
     background-color: #ccffff;
     text-align: center;
@@ -85,7 +73,7 @@ body main {
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: top;
-    background-color: #f1e6e4;;
+    background-color: #f1e6e4;
     padding-top: 150px;
 }
 
@@ -94,4 +82,38 @@ body main.container {
     grid-template-rows: 2fr 2fr 3fr;
     text-align: center;
     color: black;
+}
+
+.card {
+    background-color: #f1e6e4;
+}
+
+.btn-primary {
+    color: #fff;
+    border-color: #1a1a1a;
+    background-color: #ac1643;
+}
+
+nav div button.btn {
+    border-radius: 40px;
+}
+
+.action-button {
+    font-family: 'Ropa Sans', sans-serif;
+    display: inline-block;
+	border-radius: 10px;
+    color: #f7f7f9;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #ac1643;
+    margin: 40px;
+}
+
+#History {
+    text-align: center;
+    background-color: #9fe0ff;
+}
+
+.mb-3 {
+    background-color: #9fe0ff;
 }

@@ -12,22 +12,33 @@
 <body>
     <header>
         <nav>
-            <div>
+            <!-- <div>
                 <button name="menu" type="button">menu</button>
-            </div>
+            </div> -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Menu
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#Expiriance">Our expiriance</a>
+                  <a class="dropdown-item" href="#Shopping">Let`s go hopping</a>
+                  <a class="dropdown-item" href="#History">History & Blog</a>
+                  <a class="dropdown-item" href="#Cart">My cart</a>
+                </div>
+              </div>
             <h1>NIKA</h1>
             <div>
                 <label id="call-back">ask us anything:050-663-69-17</label>
-                <form class="authentication">Sign in</form>
+                <form class="authentication" id="LogIn">Sign in</form>
             </div>
         </nav>
         <div class="font-label">
             <p>delivering luxury</p>
             <p>experiences</p>
-            <button name="start" type="button" class="action-button"><b>get started</button>
+            <button name="start" type="button" class="action-button" href="#LogIn"><b>get started</button>
         </div>
     </header>
-    <aside class="container">
+    <aside id="Expiriance" class="container">
         <img src="img/fav_flower.png" alt="favicon mini-flower">
         <div class="aside-title">The NIKA expirience
             <p>Our small history of creation, operation and customer experirnce</p>
@@ -71,11 +82,11 @@
         </a>
         </div>
     </aside>
-    <main class="container">
+    <main id="Shopping" class="container">
         <!-- <img src="img/bouquet-of-roses.jpg" alt="bouquet of roses reversed"> -->
         <span>You best choice</span>
         <h3>Select your best expirience</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nostrum.</p>
+        <p>We want to bring you joy and happiness</p>
         <div class="row">
             <article class="card col-12 col-sm-6 col-lg-3">
                 <img src="img/box-with-orange-flowers.jpg" class="card-img-top" alt="box with orange flowers">
@@ -91,7 +102,7 @@
                 <div class="card-body">
                     <h5 class="card-title">For birthday and celebration</h5>
                     <p>$150-$200</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The middle box with any kind of flowers</p>
                     <a href="#" class="btn btn-primary">My choice</a>
                 </div>
             </article>
@@ -100,7 +111,7 @@
                 <div class="card-body">
                     <h5 class="card-title">For special moments</h5>
                     <p>$200-$250</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The big box with any kind of flowers</p>
                     <a href="#" class="btn btn-primary">My choice</a>
                 </div>
             </article>
@@ -109,14 +120,15 @@
                 <div class="card-body">
                     <h5 class="card-title">Unique and exotic</h5>
                     <p>$200-$250</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">The box with any kind of tropical and exotic flowers</p>
                     <a href="#" class="btn btn-primary">My choice</a>
                 </div>
             </article>
         </div>
     </main>
-    <article>
-        <span>For you our little history</span>
+    <br>
+    <article id="History">
+        <img src="img/fav_flower.png" alt="favicon mini-flower">
         <h2>More from NIKA</h2>
         <div class="filters">Filters
             <label>
@@ -129,35 +141,97 @@
                 <input type="radio" name="products" value="products">Products
             </label>
         </div>
-        <div class="news">
-            <img src="img/contemporary.jpg" alt="women in fieal of flowers" width="200">
-            <h3>A contemporary twist</h3> ipsum dolor sit amet consectetur adipisicing elit. Nulla, nostrum.
-            <a href="">read more</a>
-        </div>
-        <div class="tips">
-            <img src="img/pions.jpg" alt="purple pions" width="200">
-            <h3>Meet our hydration lilly</h3>ipsum dolor sit amet consectetur adipisicing elit. Nulla, nostrum.
-            <a href="">read more</a>
-        </div>
-        <div class="news">
-            <img src="img/chi-town.jpg" alt="chi town" width="200">
-            <h3>Hello Chi town</h3> Lorem ipsum dolor sit amet.ipsum dolor sit amet consectetur adipisicing elit. Nulla, nostrum.
-            <a href="">read more</a>
-        </div>
-        <div class="products news">
-            <img src="img/oleander-in-box.jpg" alt="oleander in box" width="200">
-            <h3>2014 fall collection</h3> Lorem ipsum dolor sit amet. sit amet consectetur adipisicing elit. Nulla, nostrum.
-            <a href="">read more</a>
-        </div>
-        <div class="news tips">
-            <img src="img/party-flower.jpg" alt="party flower" width="200">
-            <h3>Power of flowers</h3> Lorem ipsum dolor sit amet. sit amet consectetur adipisicing elit. Nulla, nostrum.
-            <a href="">read more</a>
-        </div>
-        <div class="tips">
-            <img src="img/women-make-flowers.png" alt="women make flowers" width="200">
-            <h3>Something special for you</h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur minus dicta deleniti enim numquam ex. nostrum.
-            <a href="">read more</a>
+        <div class="row">
+            <div class="card mb-3 news col-12 col-sm-6 col-lg-3">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/contemporary.jpg" class="card-img" alt="women in fieal of flowers">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">A contemporary twist</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/pions.jpg" class="card-img" alt="purple pions">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Meet our hydration lilly</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/chi-town.jpg" class="card-img" alt="chi town">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Hello Chi town</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/oleander-in-box.jpg" class="card-img" alt="oleander in box">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">2014 fall collection</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/party-flower.jpg" class="card-img" alt="party flower">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Power of flowers</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/women-make-flowers.png" class="card-img" alt="women make flowers">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">Something special for yo</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <br>
+                    <a href="">Read more--></small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <div>
             <a href="">Explore more stories</a>
