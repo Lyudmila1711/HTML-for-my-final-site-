@@ -6,9 +6,10 @@
     --second-color: white;
 }
 
-body{
-    max-width: 980px;
-    margin: auto;
+@media (max-width:770px) {
+    body header div.font-label {
+        font-size: 2rem;
+    }
 }
 
 body header {
