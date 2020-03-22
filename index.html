@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Delivery-flowers</title>
 </head>
 <body class="container">
     <header>
         <nav>
-            <!-- <div>
-                <button name="menu" type="button">menu</button>
-            </div> -->
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Menu
@@ -27,7 +26,7 @@
                 </div>
               </div>
             <h1>NIKA</h1>
-            <div>
+            <div class="addInfo">
                 <label id="call-back">ask us anything:050-663-69-17</label>
                 <form class="authentication" id="LogIn">Sign in</form>
             </div>
@@ -39,7 +38,7 @@
         </div>
     </header>
     <aside id="Expiriance" class="container">
-        <img src="img/fav_flower.png" alt="favicon mini-flower">
+        <img src="img/fav_flower.png" alt="mini-flower">
         <div class="aside-title">The NIKA expirience
             <p>Our small history of creation, operation and customer experirnce</p>
         </div>
@@ -83,7 +82,6 @@
         </div>
     </aside>
     <main id="Shopping" class="container">
-        <!-- <img src="img/bouquet-of-roses.jpg" alt="bouquet of roses reversed"> -->
         <span>You best choice</span>
         <h3>Select your best expirience</h3>
         <p>We want to bring you joy and happiness</p>
@@ -126,116 +124,71 @@
             </article>
         </div>
     </main>
-    <br>
     <article id="History">
         <img src="img/fav_flower.png" alt="favicon mini-flower">
         <h2>More from NIKA</h2>
         <div class="filters">Filters
-            <label>
-                <input type="radio" name="news" value="news">News
-            </label>
-            <label>
-                <input type="radio" name="tips" value="tips">Tips
-            </label>
-            <label>
-                <input type="radio" name="products" value="products">Products
-            </label>
+                <label>
+                    <input type="radio" name="news" value="news">News
+                </label>
+                <label>
+                    <input type="radio" name="tips" value="tips">Tips
+                </label>
+                <label>
+                    <input type="radio" name="products" value="products">Products
+                </label>
         </div>
-        <div class="row">
-            <div class="card mb-3 news col-12 col-sm-6 col-lg-3">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/contemporary.jpg" class="card-img" alt="women in fieal of flowers">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">A contemporary twist</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        <div class="card contemp">
+            <div class="card-content">
+                <h5 class="card-title">A contemporary twist</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="">Read more--></small></p>
             </div>
-            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/pions.jpg" class="card-img" alt="purple pions">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Meet our hydration lilly</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        </div>
+        <div class="card hydration">
+            <div class="card-content">
+                <h5 class="card-title">Meet our hydration lilly</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <br>
+                <a href="">Read more--></small></p>
             </div>
-            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/chi-town.jpg" class="card-img" alt="chi town">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Hello Chi town</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        </div>
+        <div class="card chi-town">
+            <div class="card-content">
+                <h5 class="card-title">Hello Chi town</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <br>
+                <a href="">Read more--></small></p>
             </div>
-            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/oleander-in-box.jpg" class="card-img" alt="oleander in box">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">2014 fall collection</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        </div>
+        <div class="card collection">
+            <div class="card-content">
+                <h5 class="card-title">2014 fall collection</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <br>
+                <a href="">Read more--></small></p>
             </div>
-            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/party-flower.jpg" class="card-img" alt="party flower">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Power of flowers</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        </div>
+        <div class="card article-flowers">
+            <div class="card-content">
+                <h5 class="card-title">Power of flowers</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <br>
+                <a href="">Read more--></small></p>
             </div>
-            <div class="card mb-3 col-12 col-sm-6 col-lg-3 news tips">
-                <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/women-make-flowers.png" class="card-img" alt="women make flowers">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                    <h5 class="card-title">Something special for yo</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <br>
-                    <a href="">Read more--></small></p>
-                    </div>
-                </div>
-                </div>
+        </div>
+        <div class="card special-art">
+            <div class="card-content">
+                <h5 class="card-title">Something special for yo</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <br>
+                <a href="">Read more--></small></p>
             </div>
         </div>
         <div>
             <a href="">Explore more stories</a>
         </div>
+    </div>
     </article>
     <footer>
         <div>
@@ -260,15 +213,9 @@
             <a href="">pinterest</a>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

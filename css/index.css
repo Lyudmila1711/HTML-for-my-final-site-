@@ -16,8 +16,23 @@
         font-size: 2rem;
         font-family: 'Pathway Gothic One', sans-serif;
         text-transform: uppercase;
+        letter-spacing: 7px;
         color: var(--second-color);
-        margin: 50px 0 0 0;
+        padding-top: 85px;
+    }
+}
+
+@media (max-width:425px) {
+    nav div.addInfo {
+        display: none;
+    }
+    body header nav div label {
+    font-size: 12px;
+    color: white;
+    margin: 10px 20px;  
+    }
+    body header div.font-label {
+        letter-spacing: 5px;  
     }
 }
 
@@ -34,6 +49,12 @@ body header nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    padding-top: 20px;
+}
+
+button#dropdownMenuButton.btn-secondary {
+    border-color: #ac1643;
+    background-color: #ffdcdc2e;
 }
 
 body header nav h1 {
@@ -80,6 +101,17 @@ body aside {
     padding-top: 20px;
 }
 
+div.aside-title {    
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+div.carousel-caption {
+    color: #6b00cc;
+    background-color: #f0ffff87;
+}
+
 body main {
     background-image: url(../img/fon-bouquiet.png);
     min-height: 500px;
@@ -94,6 +126,17 @@ body main.container {
     grid-template-rows: 2fr 2fr 3fr;
     text-align: center;
     color: black;
+    padding-top: 192px;
+}
+
+main span {
+    background-color: #ffffff75;
+    padding: 10px 10px 10px 10px;
+}
+
+main h3 {
+    font-style: italic;
+    letter-spacing: 5px;
 }
 
 .card {
@@ -113,12 +156,14 @@ nav div button.btn {
 .action-button {
     font-family: 'Ropa Sans', sans-serif;
     display: inline-block;
-	border-radius: 10px;
-    color: #f7f7f9;
+    border-radius: 54px;
+    color: #f8f9fa;
     font-size: 12px;
     text-transform: uppercase;
-    background-color: #ac1643;
+    border-color: #ac1643;
+    background-color: #f3557d54;
     margin: 40px;
+    padding: 10px;
 }
 
 #History {
@@ -126,6 +171,61 @@ nav div button.btn {
     background-color: #9fe0ff;
 }
 
-.mb-3 {
-    background-color: #9fe0ff;
+/* div.articles-of-history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+
+div.card.contemp {
+    background-image: url(../img/contemporary.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
 }
+
+div.card.hydration {
+    background-image: url(../img/pions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+div.card.chi-town {
+    background-image: url(../img/chi-town.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  
+}
+
+div.card.collection {
+    background-image: url(../img/oleander-in-box.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+div.card.article-flowers {
+    background-image: url(../img/party-flower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  
+}
+
+div.card.special-art {
+    background-image: url(../img/women-make-flowers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+
+
+
+
