@@ -22,6 +22,11 @@ body header nav {
     padding-top: 20px;
 }
 
+div.addInfo {
+    display: flex;
+    justify-content: flex-end;
+}
+
 button#dropdownMenuButton.btn-secondary {
     border-color: #ac1643;
     background-color: #ffdcdc2e;
@@ -299,6 +304,14 @@ div.socail-networks a {
         margin: 50px 0 0 0;
         letter-spacing: 15px;
         }
+    }
+
+    .alert {
+        position: fixed;
+        top: 50px; 
+        width: 50%;
+        left: 25%;
+        z-index: 1051;
     }
 
       
