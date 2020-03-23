@@ -27,6 +27,10 @@ button#dropdownMenuButton.btn-secondary {
     background-color: #ffdcdc2e;
 }
 
+button#dropdownMenuButton.btn-secondary:hover {
+    background-color: #ea2d6257;
+}
+
 body header nav h1 {
     text-align: center;
 }
@@ -78,7 +82,7 @@ body main {
 
 body main.container {
     display: grid;
-    grid-template-rows: 2fr 2fr 3fr;
+    grid-template-rows: 2fr 2fr 2fr;
     text-align: center;
     color: black;
     padding-top: 192px;
@@ -120,6 +124,12 @@ nav div button.btn {
     background-color: #f3557d54;
     margin: 40px;
     padding: 10px;
+    letter-spacing: 10px;
+}
+
+.act-button:hover {
+    color: black;
+    text-decoration: none;
 }
 
 #History {
