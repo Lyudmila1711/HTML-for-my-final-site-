@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <title>Delivery-flowers</title>
 </head>
 <body class="container">
@@ -20,9 +20,14 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#Expiriance">Our expiriance</a>
-                  <a class="dropdown-item" href="#Shopping">Let`s go hopping</a>
+                  <a class="dropdown-item" href="#products">Let`s go hopping</a>
                   <a class="dropdown-item" href="#History">History & Blog</a>
-                  <a class="dropdown-item" href="#Cart">My cart</a>
+                  <div>
+                    <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                      <i class="fas fa-shopping-cart"></i>
+                        Cart<span id="cart-badge" class="badge badge-light"></span>
+                    </a>
+                </div>
                 </div>
               </div>
             <h1>NIKA</h1>
@@ -34,7 +39,7 @@
         <div class="font-label">
             <p>delivering luxury</p>
             <p>experiences</p>
-            <button name="start" type="button" class="action-button" href="#LogIn"><b>get started</button>
+            <a class="act-button" href="#products">get started</a>
         </div>
     </header>
     <aside id="Expiriance" class="container">
@@ -81,11 +86,11 @@
         </a>
         </div>
     </aside>
-    <main id="Shopping" class="container">
+    <main class="container">
         <span>You best choice</span>
         <h3>Select your best expirience</h3>
         <p>We want to bring you joy and happiness</p>
-        <div class="row">
+        <!-- <div class="row">
             <article class="card col-12 col-sm-6 col-lg-3">
                 <img src="img/box-with-orange-flowers.jpg" class="card-img-top" alt="box with orange flowers">
                 <div class="card-body">
@@ -122,71 +127,81 @@
                     <a href="#" class="btn btn-primary">My choice</a>
                 </div>
             </article>
-        </div>
+        </div> -->
+
+        <section>
+            <h2 id="products">Our offers</h2>
+            <div class="row products-container">
+               <!--Products are dynamically generated here-->
+            </div>
+        </section>
     </main>
     <article id="History">
         <img src="img/fav_flower.png" alt="favicon mini-flower">
         <h2>More from NIKA</h2>
         <div class="filters">Filters
-                <label>
-                    <input type="radio" name="news" value="news">News
-                </label>
-                <label>
-                    <input type="radio" name="tips" value="tips">Tips
-                </label>
-                <label>
-                    <input type="radio" name="products" value="products">Products
-                </label>
+            <label>
+                <input type="radio" name="news" value="news">News
+            </label>
+            <label>
+                <input type="radio" name="tips" value="tips">Tips
+            </label>
+            <label>
+                <input type="radio" name="products" value="products">Products
+            </label>
         </div>
-        <div class="card contemp">
-            <div class="card-content">
-                <h5 class="card-title">A contemporary twist</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="">Read more--></small></p>
+        <div class="history-cards">
+            <div class="card contemp">
+                <div class="card-content">
+                    <h5 class="card-history-title">A contemporary twist</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card hydration">
-            <div class="card-content">
-                <h5 class="card-title">Meet our hydration lilly</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <br>
-                <a href="">Read more--></small></p>
+            <div class="card hydration">
+                <div class="card-content">
+                    <h5 class="card-history-title">Meet our hydration lilly</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card chi-town">
-            <div class="card-content">
-                <h5 class="card-title">Hello Chi town</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <br>
-                <a href="">Read more--></small></p>
+            <div class="card chi-town">
+                <div class="card-content">
+                    <h5 class="card-history-title">Hello Chi town</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card collection">
-            <div class="card-content">
-                <h5 class="card-title">2014 fall collection</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <br>
-                <a href="">Read more--></small></p>
+            <div class="card collection">
+                <div class="card-content">
+                    <h5 class="card-history-title">2014 fall collection</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card article-flowers">
-            <div class="card-content">
-                <h5 class="card-title">Power of flowers</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <br>
-                <a href="">Read more--></small></p>
+            <div class="card article-flowers">
+                <div class="card-content">
+                    <h5 class="card-history-title">Power of flowers</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="card special-art">
-            <div class="card-content">
-                <h5 class="card-title">Something special for yo</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <br>
-                <a href="">Read more--></small></p>
+            <div class="card special-art">
+                <div class="card-content">
+                    <h5 class="card-history-title">Something special for you</h5>
+                    <p class="card-history-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        <a href="">Read more</a>
+                    </p>
+                </div>
             </div>
         </div>
         <div>
-            <a href="">Explore more stories</a>
+            <a href="">Explore more stories...</a>
         </div>
     </div>
     </article>
@@ -208,14 +223,78 @@
             </form>
         </div>
         <div class="socail-networks">Follow on NIKA
-            <a href="">facebook</a>
+            <a href="https://www.facebook.com/lyudmila.r111">facebook</i></a>
             <a href="">instagram</a>
             <a href="">pinterest</a>
         </div>
     </footer>
+
+    <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Cart -->
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
 </body>
 </html>

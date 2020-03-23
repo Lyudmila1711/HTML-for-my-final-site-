@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "Small Box",
+        "image": "box-with-orange-flowers.jpg",
+        "description": "The small box with any kind of flowers",
+        "price": 59.99
+    },
+    {
+        "id": "2",
+        "title": "Large box",
+        "image": "box-with-red-flowers.jpg",
+        "description": "The middle box with any kind of flowers",
+        "price": 199.99
+    },
+    {
+        "id": "3",
+        "title": "Big Box",
+        "image": "big-box-with-flowers.jpg",
+        "description": "The big box with any kind of flowers",
+        "price": 249.99
+    },
+    {
+        "id": "4",
+        "title": "Unique box",
+        "image": "oleander-in-box.jpg",
+        "description": "The box with any kind of tropical and exotic flowers",
+        "price": 399.99
+    }
+]
