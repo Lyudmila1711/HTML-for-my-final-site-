@@ -306,13 +306,13 @@ div.socail-networks a {
         }
     }
 
-    .alert {
-        position: fixed;
-        top: 50px; 
-        width: 50%;
-        left: 25%;
-        z-index: 1051;
-    }
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
 
       
    
